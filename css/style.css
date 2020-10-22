@@ -74,7 +74,7 @@ to {
    /*Your code here.*/
   animation-name: logo_wiggle;
   animation-duration: 15s;
-
+  
 }
 
 /* Cards! */
@@ -157,8 +157,7 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
-  display:flex;
-  justify-content: center;
+  display: flex;
   align-items: center;
   flex-direction: column;
 }
@@ -166,8 +165,6 @@ header{
 .nav_links{
   /*Your code here again.*/
   display:flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -188,7 +185,6 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
-    display: flex;
     flex-basis: 225px;
   }
 
@@ -201,12 +197,13 @@ header{
   header{
     /*Your code here again.*/  
     flex-direction: row;
+    justify-content: space-between;
+  
   }
 
   .nav_links{
     /*Your code here again.*/  
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
   }
 
   .nav_item a{
@@ -218,6 +215,15 @@ header{
   .card {
     flex-basis: 200px;
   }
+  body{
+    background-image: none;
+  }
+  .pricing{
+    align-items: flex-start;
+  }
+  .gallery, #gallery{
+    display:none;
+  }
   /*Your code here again.*/
   /*You will want four selectors*/  
 }
@@ -225,7 +231,7 @@ header{
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
 @media (prefers-reduced-motion: reduce) {
-  .card{
+  #logo{
     animation: none;
   }
 }
